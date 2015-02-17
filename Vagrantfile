@@ -35,6 +35,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "shell", path: "provision.sh"
-  config.vm.provision "shell", path: "user-setup.sh", privileged: false
 
 end
