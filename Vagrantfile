@@ -4,9 +4,11 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "chef/fedora-21"
+  config.vbguest.auto_update = false
 
-  config.vm.hostname = "devbox"
+  # config.vm.box = "chef/fedora-21"
+  config.vm.box = "hansode/fedora-21-server-x86_64"
+
   config.vm.network "private_network", ip: "192.168.19.84"
 
   # Virtualbox specific settings
