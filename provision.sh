@@ -1,8 +1,9 @@
+#!/bin/sh
 
 yum update -y
 yum groupinstall -y "GNOME Desktop"
 
-yum install -y git vim zsh docker-io screen
+yum install -y git vim zsh docker screen
 
 # Install gui tools
 yum install -y gimp inkscape adobe-source-code-pro-fonts
